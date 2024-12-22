@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--     <link rel="stylesheet" href="06_flex-align-content.css"> -->
+  <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    padding: 0 0 0 40px;
+}
+
+.container{
+    background: #eee;
+/*     width: 300px; */
+/*     height:200px; */
+    margin: 50px atuo 0;
+    padding: 10px;
+    border: 3px solid #000;
+    display:flex;
+    width: 300px;
+    height:200px;
+    align-items:center;   /*  here, it is act as parent alignment value of its child element*/
+}
+.items{color: #fff;font-size: 20px;font-weight: normal;text-align: center;padding:2px;margin:2px;}
+.item1{background: orangered; align-self: flex-start;}
+.item1{background: orangered; align-self: flex-end;}
+.item1{background: orangered; align-self: center;}
+.item1{background: orangered; align-self: baseline;}
+.item1{background: orangered; align-self: auto;}    /* this 'auto' will follow its parent alignment value. */
+.item1{background: orangered; align-self: stretch;}
+.item2{background: yellowgreen;}
+.item3{background: mediumpurple;}
+.item4{background: hotpink; align-self: flex-end;}
+.item5{background: royalblue;}
+.item6{background: orchid;}
+.item7{background: goldenrod;}
+.item8{background: #7DCEA0;}
+
+
+    
+  </style>
+</head>
+<body>
+    <h1>Yahoo Baba : CSS Flexbox - Align-content</h1>
+
+    <div class="container">
+        <div class="items item1">One</div>
+        <div class="items item2">Two</div>
+        <div class="items item3">Three</div>
+        <div class="items item4">Four</div>
+        <!-- <div class="items item5">Five</div>
+        <div class="items item6">Six</div>
+        <div class="items item7">Seven</div>
+        <div class="items item8">Eight</div>
+        <div class="items item9">Nine</div>
+        <div class="items item10">Ten</div> -->
+    </div>
+</body>
+</html>
