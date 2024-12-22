@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--     <link rel="stylesheet" href="06_flex-align-content.css"> -->
+  <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    padding: 0 0 0 40px;
+}
+
+.container{
+    background: #eee;
+/*     width: 300px; */
+/*     height:200px; */
+    margin: 50px atuo 0;
+    padding: 10px;
+    border: 3px solid #000;
+    display:flex;
+  flex-direction: column;
+    width: 300px;
+    height:200px;
+    flex-wrap: wrap;
+
+    align-content: stretch;  /*   default value */
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly;
+    /* 
+    
+        The CSS properties align-items and align-content are used in the context of flexbox or grid layouts, but they serve different purposes. Here's the difference:
+
+    == align-items ==
+        ~> Definition: Aligns all the items (flex or grid items) along the cross-axis within a container.
+        ~> Use case: Used when you want to align individual items relative to the container's cross-axis.
+        ~> Effect: Affects all the items in the container unless overridden by align-self on individual items.
+
+    == align-content ==
+        ~> Definition: Aligns the entire group of items (flex or grid lines) along the cross-axis when there is extra space in the container.
+        ~> Use case: Only applies when there are multiple rows or lines of items (e.g., when flex-wrap: wrap is used in flexbox).
+        ~> Effect: Determines how the rows or lines are distributed within the container.
+
+        Note:- If you're working with a single row or line, align-content will have no effect. In contrast, align-items always works to align the items within their container.
+    */
+
+}
+.items{color: #fff;font-size: 20px;font-weight: normal;text-align: center;padding:2px;margin:2px;}
+.item1{background: orangered;}
+.item2{background: yellowgreen;}
+.item3{background: mediumpurple;}
+.item4{background: hotpink;}
+.item5{background: royalblue;}
+.item6{background: orchid;}
+.item7{background: goldenrod;}
+.item8{background: #7DCEA0;}
+
+
+    
+  </style>
+</head>
+<body>
+    <h1>Yahoo Baba : CSS Flexbox - Align-content</h1>
+
+    <div class="container">
+        <div class="items item1">One</div>
+        <div class="items item2">Two</div>
+        <div class="items item3">Three</div>
+        <div class="items item4">Four</div>
+        <!-- <div class="items item5">Five</div>
+        <div class="items item6">Six</div>
+        <div class="items item7">Seven</div>
+        <div class="items item8">Eight</div>
+        <div class="items item9">Nine</div>
+        <div class="items item10">Ten</div> -->
+    </div>
+</body>
+</html>
